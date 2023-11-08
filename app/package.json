@@ -1,5 +1,5 @@
 {
-  "name": "my-qwik-empty-starter",
+  "name": "@mono/app",
   "description": "App with Routing built-in ready to create your app",
   "engines": {
     "node": ">=15.0.0"
@@ -39,6 +39,7 @@
     "vite-tsconfig-paths": "^4.2.1"
   },
   "dependencies": {
+    "@samijaber/lib-test": "workspace:*",
     "isolated-vm": "^4.6.0"
   }
 }
