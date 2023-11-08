@@ -1,6 +1,6 @@
 {
   "name": "@samijaber/lib-test",
-  "version": "0.7.0",
+  "version": "0.0.2",
   "type": "module",
   "main": "./lib/edge/index.qwik.cjs",
   "module": "./lib/edge/index.qwik.mjs",
