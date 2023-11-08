@@ -39,7 +39,7 @@
     "vite-tsconfig-paths": "^4.2.1"
   },
   "dependencies": {
-    "@samijaber/lib-test": "workspace:*",
+    "@samijaber/lib-test": "0.0.2",
     "isolated-vm": "^4.6.0"
   }
 }
