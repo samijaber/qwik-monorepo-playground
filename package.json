@@ -1,0 +1,8 @@
+{
+  "name": "@samijaber/root",
+  "workspaces": [
+    "lib",
+    "consumer"
+  ],
+  "packageManager": "yarn@3.6.1"
+}

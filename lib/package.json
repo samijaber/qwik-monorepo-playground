@@ -2,9 +2,9 @@
   "name": "@samijaber/lib-test",
   "version": "0.0.2",
   "type": "module",
-  "main": "./lib/edge/index.qwik.cjs",
-  "module": "./lib/edge/index.qwik.mjs",
-  "qwik": "./lib/browser/index.qwik.mjs",
+  "main": "./lib/edge/index.cjs",
+  "module": "./lib/edge/index.mjs",
+  "qwik": "./lib/browser/index.mjs",
   "types": "./types/src/index.d.ts",
   "files": [
     "README.md",
@@ -17,74 +17,74 @@
     ".": {
       "node": {
         "types": "./types/src/index.d.ts",
-        "import": "./lib/node/index.qwik.mjs",
-        "require": "./lib/node/index.qwik.cjs"
+        "import": "./lib/node/index.mjs",
+        "require": "./lib/node/index.cjs"
       },
       "browser": {
         "types": "./types/src/index.d.ts",
-        "import": "./lib/browser/index.qwik.mjs",
-        "require": "./lib/browser/index.qwik.cjs"
+        "import": "./lib/browser/index.mjs",
+        "require": "./lib/browser/index.cjs"
       },
       "edge-routine": {
         "types": "./types/src/index.d.ts",
-        "import": "./lib/edge/index.qwik.mjs",
-        "require": "./lib/edge/index.qwik.cjs"
+        "import": "./lib/edge/index.mjs",
+        "require": "./lib/edge/index.cjs"
       },
       "workerd": {
         "types": "./types/src/index.d.ts",
-        "import": "./lib/edge/index.qwik.mjs",
-        "require": "./lib/edge/index.qwik.cjs"
+        "import": "./lib/edge/index.mjs",
+        "require": "./lib/edge/index.cjs"
       },
       "deno": {
         "types": "./types/src/index.d.ts",
-        "import": "./lib/edge/index.qwik.mjs",
-        "require": "./lib/edge/index.qwik.cjs"
+        "import": "./lib/edge/index.mjs",
+        "require": "./lib/edge/index.cjs"
       },
       "lagon": {
         "types": "./types/src/index.d.ts",
-        "import": "./lib/edge/index.qwik.mjs",
-        "require": "./lib/edge/index.qwik.cjs"
+        "import": "./lib/edge/index.mjs",
+        "require": "./lib/edge/index.cjs"
       },
       "netlify": {
         "types": "./types/src/index.d.ts",
-        "import": "./lib/edge/index.qwik.mjs",
-        "require": "./lib/edge/index.qwik.cjs"
+        "import": "./lib/edge/index.mjs",
+        "require": "./lib/edge/index.cjs"
       },
       "edge-light": {
         "types": "./types/src/index.d.ts",
-        "import": "./lib/edge/index.qwik.mjs",
-        "require": "./lib/edge/index.qwik.cjs"
+        "import": "./lib/edge/index.mjs",
+        "require": "./lib/edge/index.cjs"
       },
       "bun": {
         "types": "./types/src/index.d.ts",
-        "import": "./lib/edge/index.qwik.mjs",
-        "require": "./lib/edge/index.qwik.cjs"
+        "import": "./lib/edge/index.mjs",
+        "require": "./lib/edge/index.cjs"
       },
       "electron": {
         "types": "./types/src/index.d.ts",
-        "import": "./lib/node/index.qwik.mjs",
-        "require": "./lib/node/index.qwik.cjs"
+        "import": "./lib/node/index.mjs",
+        "require": "./lib/node/index.cjs"
       },
       "default": {
         "types": "./types/src/index.d.ts",
-        "import": "./lib/browser/index.qwik.mjs",
-        "require": "./lib/browser/index.qwik.cjs"
+        "import": "./lib/browser/index.mjs",
+        "require": "./lib/browser/index.cjs"
       }
     },
     "./edge": {
       "types": "./types/src/index.d.ts",
-      "import": "./lib/edge/index.qwik.mjs",
-      "require": "./lib/edge/index.qwik.cjs"
+      "import": "./lib/edge/index.mjs",
+      "require": "./lib/edge/index.cjs"
     },
     "./node": {
       "types": "./types/src/index.d.ts",
-      "import": "./lib/node/index.qwik.mjs",
-      "require": "./lib/node/index.qwik.cjs"
+      "import": "./lib/node/index.mjs",
+      "require": "./lib/node/index.cjs"
     },
     "./browser": {
       "types": "./types/src/index.d.ts",
-      "import": "./lib/browser/index.qwik.mjs",
-      "require": "./lib/browser/index.qwik.cjs"
+      "import": "./lib/browser/index.mjs",
+      "require": "./lib/browser/index.cjs"
     }
   },
   "scripts": {
@@ -92,11 +92,12 @@
     "typecheck": "tsc --noEmit",
     "tsc": "tsc",
     "build": "pnpm run \"/^build:.*/\"",
+    "buildy": "yarn build:types && yarn build:node && yarn build:edge && yarn build:browser",
     "_build": "vite build --mode lib",
     "build:types": "tsc",
-    "build:node": "SDK_ENV=node pnpm _build",
-    "build:edge": "SDK_ENV=edge pnpm _build",
-    "build:browser": "SDK_ENV=browser pnpm _build"
+    "build:node": "SDK_ENV=node yarn _build",
+    "build:edge": "SDK_ENV=edge yarn _build",
+    "build:browser": "SDK_ENV=browser yarn _build"
   },
   "devDependencies": {
     "typescript": "^5.1.6",

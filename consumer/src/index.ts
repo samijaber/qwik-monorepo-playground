@@ -1,3 +1,3 @@
 import { evaluate } from "@samijaber/lib-test";
 
-evaluate("1 + 1");
+console.log(evaluate("1 + 1"));
