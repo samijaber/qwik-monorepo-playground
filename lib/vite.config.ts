@@ -13,10 +13,7 @@ export default defineConfig(() => {
       lib: {
         entry: "./src/index.ts",
         formats: ["es", "cjs"],
-        /**
-         * https://github.com/BuilderIO/qwik/issues/4952
-         */
-        fileName: (format) => `index.qwik.${format === "es" ? "mjs" : "cjs"}`,
+        fileName: (format) => `index.${format === "es" ? "mjs" : "cjs"}`,
       },
       rollupOptions: {
         external: ["isolated-vm"],
