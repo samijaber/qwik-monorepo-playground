@@ -1,0 +1,14 @@
+{
+  "name": "@samijaber/lib2",
+  "version": "0.0.2",
+  "type": "module",
+  "scripts": {
+    "run": "tsx src/index.tsx"
+  },
+  "dependencies": {
+    "@samijaber/lib-test": "workspace:*"
+  },
+  "devDependencies": {
+    "tsx": "^4.0.0"
+  }
+}
