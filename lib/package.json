@@ -9,7 +9,7 @@
   "main": "./lib/index.qwik.cjs",
   "module": "./lib/index.qwik.mjs",
   "qwik": "./lib/index.qwik.mjs",
-  "types": "./types/src/index.d.ts",
+  "types": "./types/src/universal.d.ts",
   "files": [
     "types",
     "lib"
