@@ -2,90 +2,14 @@
   "name": "@samijaber/lib-test",
   "version": "0.0.2",
   "type": "module",
-  "main": "./lib/edge/index.cjs",
-  "module": "./lib/edge/index.mjs",
-  "qwik": "./lib/browser/index.mjs",
-  "types": "./types/src/index.d.ts",
+  "main": "./src/index.js",
+  "module": "./src/index.js",
   "files": [
-    "README.md",
     "package.json",
-    "types-hacks.d.ts",
-    "types",
-    "lib"
+    "src"
   ],
   "exports": {
-    ".": {
-      "node": {
-        "types": "./types/src/index.d.ts",
-        "import": "./lib/node/index.mjs",
-        "require": "./lib/node/index.cjs"
-      },
-      "browser": {
-        "types": "./types/src/index.d.ts",
-        "import": "./lib/browser/index.mjs",
-        "require": "./lib/browser/index.cjs"
-      },
-      "edge-routine": {
-        "types": "./types/src/index.d.ts",
-        "import": "./lib/edge/index.mjs",
-        "require": "./lib/edge/index.cjs"
-      },
-      "workerd": {
-        "types": "./types/src/index.d.ts",
-        "import": "./lib/edge/index.mjs",
-        "require": "./lib/edge/index.cjs"
-      },
-      "deno": {
-        "types": "./types/src/index.d.ts",
-        "import": "./lib/edge/index.mjs",
-        "require": "./lib/edge/index.cjs"
-      },
-      "lagon": {
-        "types": "./types/src/index.d.ts",
-        "import": "./lib/edge/index.mjs",
-        "require": "./lib/edge/index.cjs"
-      },
-      "netlify": {
-        "types": "./types/src/index.d.ts",
-        "import": "./lib/edge/index.mjs",
-        "require": "./lib/edge/index.cjs"
-      },
-      "edge-light": {
-        "types": "./types/src/index.d.ts",
-        "import": "./lib/edge/index.mjs",
-        "require": "./lib/edge/index.cjs"
-      },
-      "bun": {
-        "types": "./types/src/index.d.ts",
-        "import": "./lib/edge/index.mjs",
-        "require": "./lib/edge/index.cjs"
-      },
-      "electron": {
-        "types": "./types/src/index.d.ts",
-        "import": "./lib/node/index.mjs",
-        "require": "./lib/node/index.cjs"
-      },
-      "default": {
-        "types": "./types/src/index.d.ts",
-        "import": "./lib/browser/index.mjs",
-        "require": "./lib/browser/index.cjs"
-      }
-    },
-    "./edge": {
-      "types": "./types/src/index.d.ts",
-      "import": "./lib/edge/index.mjs",
-      "require": "./lib/edge/index.cjs"
-    },
-    "./node": {
-      "types": "./types/src/index.d.ts",
-      "import": "./lib/node/index.mjs",
-      "require": "./lib/node/index.cjs"
-    },
-    "./browser": {
-      "types": "./types/src/index.d.ts",
-      "import": "./lib/browser/index.mjs",
-      "require": "./lib/browser/index.cjs"
-    }
+    ".": "./src/index.js"
   },
   "scripts": {
     "release": "npm publish",
