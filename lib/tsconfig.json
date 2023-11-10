@@ -16,7 +16,7 @@
     "noImplicitAny": false,
     "skipLibCheck": true,
     "rootDir": "./",
-    "types": ["node", "qwik"]
+    "types": ["node"]
   },
   "include": ["./src/**/*"]
 }
