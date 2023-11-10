@@ -15,7 +15,8 @@
     "forceConsistentCasingInFileNames": true,
     "noImplicitAny": false,
     "skipLibCheck": true,
-    "rootDir": "./"
+    "rootDir": "./",
+    "types": ["node", "qwik"]
   },
   "include": ["./src/**/*"]
 }

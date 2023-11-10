@@ -1,18 +1,9 @@
-import { component$ } from "@builder.io/qwik";
-import { useTask$ } from "@builder.io/qwik";
-import { useVisibleTask$ } from "@builder.io/qwik";
+import ivm from "isolated-vm";
 
 export function MyFn() {
-  console.log("Server MyFn");
+  const isolate = new ivm.Isolate({ memoryLimit: 128 });
+  const context = isolate.createContextSync();
+  const resultStr = context.evalSync("1+40");
+
+  console.log("Server MyFn: ", resultStr);
 }
-
-export default component$(() => {
-  useTask$(() => {
-    MyFn();
-  });
-
-  useVisibleTask$(() => {
-    MyFn();
-  });
-  return <>Hello World.</>;
-});

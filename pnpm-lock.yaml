@@ -60,6 +60,12 @@ importers:
       '@builder.io/qwik':
         specifier: ^1.2.17
         version: 1.2.17(@types/node@20.9.0)(undici@5.27.2)
+      '@types/node':
+        specifier: ^20.8.4
+        version: 20.9.0
+      isolated-vm:
+        specifier: ^4.6.0
+        version: 4.6.0
       undici:
         specifier: ^5.26.0
         version: 5.27.2
