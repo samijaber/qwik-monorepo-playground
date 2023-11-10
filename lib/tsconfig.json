@@ -15,11 +15,7 @@
     "forceConsistentCasingInFileNames": true,
     "noImplicitAny": false,
     "skipLibCheck": true,
-    "rootDir": "./",
-    "paths": {
-      "placeholder-runtime": ["./src/evaluate/browser-runtime.js"]
-    }
+    "rootDir": "./"
   },
-  "include": ["types.d.ts", "types-hack.d.ts", "src"],
-  "exclude": ["src/blocks/form/form.tsx"]
+  "include": ["./src/**/*"]
 }
